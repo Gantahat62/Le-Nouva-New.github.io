@@ -1,0 +1,243 @@
+body{
+	background-color: #2c3134;	
+    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 50px;
+    position: relative;
+}
+
+p{
+    font-family:Monospace, Helvetica, Arial;
+    color: rgb(167, 165, 166);
+}
+
+h2, h3, h4, h5{
+    font-family: fantasy;
+    color: rgb(167, 165, 166);
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.align{
+    display: block;
+    margin: auto;
+}
+
+hr{
+    box-shadow: 0px 0px 20px 0.5px white; 
+}
+
+/*Header*/
+
+nav{
+    box-shadow: 0px 0px 10px 2px #000; 
+}
+
+.navbar-inverse{
+    background: #3c3e3d;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.navbar-brand{
+    font-size: 170%;
+    padding-left: 30px;
+}
+
+header img{
+    display: block;
+    margin: auto;
+    width: 42px;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+/*Cabezal*/
+
+.hero-image{
+    height: 92.5vh;
+    margin: auto;
+    background: url(../img/Banner.jpg) 0/ cover fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.hero-image, img{
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image h1{
+    font-size: 90px;
+    font-family: Rondalo;
+    text-shadow: 0px 0px 20px white;
+    background: rgba(0,0,0,0.7);
+    padding: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 15px;
+}
+
+/*inicio*/
+
+.inicio{
+    padding-top: 50px;
+}
+
+.container{
+    box-shadow: 0px 0px 20px 5px #000;
+}
+
+article p{
+    padding-top: 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+article h2{
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.main img{
+    padding: 0;
+    border: 10px solid rgb(36, 35, 33);
+}
+
+/*Personajes*/
+
+.team{
+    padding-top: 33px;
+}
+
+
+.team-agileinfo{
+	margin:4em 0 0;
+}
+.team-agileinfo:nth-child(2){
+	margin:4em 0 0;
+}
+.team-grid-left{
+	float:left;
+	width:65%;
+	text-align:right;
+}
+.team-grid-left h4 {
+    margin: 0;
+    font-size: 1.6em;
+    color: #b72424;
+    font-weight: 300;
+}
+.team-grid-left p {
+    color: rgb(167, 165, 166);
+    font-size: 1em;
+    margin: .8em 0 0;
+    line-height: 1.8em;
+}
+
+.team-grid-right{
+	float:right;
+	width:30%;
+}
+.team-agileinfo img.img-responsive {
+    cursor: pointer;
+    filter:opacity(50%);
+    padding: 0;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border: 4px solid #d72727;
+    transition: 0.3s all ease;
+}
+
+.team-agileinfo img:hover {
+    filter: opacity(100%);
+}
+
+.aliquam{
+	float:left !important;
+	width:30% !important;
+}
+.non{
+	float:right !important;
+	width:65% !important;
+	text-align:left !important;
+}
+
+.team-grid:hover .team-grid-right {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+
+/*Ciudad*/
+
+.tab-content img{
+    padding: 0;
+    margin-top: 1%;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px solid rgb(36, 35, 33);
+}
+
+/*Vestigios*/
+
+.vestigios{
+    padding-top: 40px;
+}
+
+.galery{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.galery img{
+    padding: 0;
+    border-radius: 15px;
+    border: 8px solid rgb(36, 35, 33);
+}
+
+.galery-img{
+    cursor: pointer;
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;  
+    animation: escalar 1.5s infinite alternate;
+}
+
+@keyframes escalar{
+    
+    to{
+        filter: none;
+        transform: scale(1.03);
+    }
+    
+    from{
+        filter: blur(2px);
+        transform: scale(1);
+    }
